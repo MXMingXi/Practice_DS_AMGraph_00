@@ -30,7 +30,6 @@ void delete2dArray(T**& x, int numberOfRows)
 	x = NULL;
 }
 
-
 class current
 {
 public:
@@ -40,3 +39,22 @@ private:
 	int x;
 	int y;
 };
+
+bool CreatUND(AMGraph& G)
+{
+	fprintf(stdout, "请输入顶点数和边数：\n");
+	fscanf_s(stdin, "%d %d", &G.vexnum, &G.arcnum);
+	fprintf(stdout, "请输入顶点信息：");
+	for (int i = 0; i < G.vexnum; i++)
+	{
+		fscanf_s(stdin, "%c", &G.vexs[i]);
+	}
+	for (int i = 0; i < G.arcnum; i++)
+	{
+		for (int j = 0; j < G.arcnum; j++)
+		{
+			G.arcs[i][j] = MAXInt;
+		}
+	}
+
+}

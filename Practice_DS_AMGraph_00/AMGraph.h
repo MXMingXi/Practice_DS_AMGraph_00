@@ -10,6 +10,6 @@ typedef struct
 	VertexType vexs[MVNum];
 	ArcType arcs[MVNum][MVNum];
 	int vexnum = 0;
-	int arcs = 0;
+	int arcnum = 0;
 }AMGraph;
 
